@@ -1,0 +1,80 @@
+/** @format */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#container {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+}
+
+#heading {
+  font-family: "Outfit", sans-serif;
+  font-size: 70px;
+  color: white;
+  line-height: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 60px;
+}
+h3 {
+  color: #d20094;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#paragraph {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+#ul {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-bottom: 35px;
+}
+
+.bold {
+  font-weight: bold;
+}
+label {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-weight: 900;
+}
+#checkBox {
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: middle;
+  border: 3px solid #ddd;
+}
+#btn {
+  margin-left: 350px;
+  background: #00ffff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  vertical-align: middle;
+  padding: 10px 30px;
+  user-select: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00ffff;
+}

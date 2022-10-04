@@ -1,0 +1,162 @@
+<!-- @format -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(bg.jpg);
+        background-size: cover;
+      }
+      #logo {
+        width: 150px;
+        margin-left: 75px;
+        margin-top: 48px;
+      }
+      .center {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+      #time {
+        font-size: 35px;
+        color: white;
+      }
+      #text {
+        font-size: 7px;
+      }
+      .timer {
+        margin-left: 80%;
+      }
+      #myChart {
+        width: 150px;
+        height: 100px;
+        padding-top: 5px;
+      }
+      .style {
+        color: white;
+        font-family: outfit, sans-serif;
+        font-size: 45px;
+        font-weight: lighter;
+        line-height: 60px;
+      }
+      #secondH1 {
+        color: white;
+        font-family: outfit, sans-serif;
+        font-size: 45px;
+        font-weight: bold;
+      }
+      .container_2 {
+        padding-top: -10px;
+        margin-left: 25%;
+        margin-bottom: 60px;
+        margin-top: -90px;
+        width: 700px;
+        text-align: center;
+      }
+      .container_3 {
+        width: 1000px;
+        margin-left: 20%;
+      }
+      .button {
+        width: 350px;
+        height: 70px;
+        border-radius: 35px;
+        margin-right: 45px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        background-color: rgba(163, 151, 173, 0.223);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: inter, sans-serif;
+        box-shadow: -4.5px -2px 5.5px white;
+        border: blueviolet;
+        cursor: pointer;
+      }
+      .button:focus{
+        background-color: #900080;
+      }
+      footer {
+        color: #fff;
+        font-family: outfit, sans-serif;
+        font-size: 20px;
+      }
+      span {
+        color: #d20094;
+      }
+      .container{
+        margin-left: 1100px;
+        margin-top: 20px;
+      }
+      #nextButton{
+        width: 150px;
+        height: 50px;
+        border-radius: 35px;
+        margin-right: 45px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: inter, sans-serif;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      #nextButton:focus{
+        background-color: #00ffff;
+      }
+      .container_4 {
+        text-align: center;
+        padding-top: 70px;
+        margin-bottom: 0%;
+        margin-top: -20px;
+      }
+      .selected {
+        background-color: #900080;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_1">
+      <img id="logo" src="epicode_logo.png" />
+      <div
+        class="timer"
+        style="height: 150px; max-width: 200px; position: relative"
+      >
+        <canvas class="center" style="position: absolute" id="myChart"></canvas>
+        <span id="text" class="center"
+          >SECONDS<br /><span id="time">16<br /></span>REMAINING</span
+        >
+      </div>
+    </div>
+    <div class="container_2">
+      <h1 id="question" class="style">
+        QUESTION
+      </h1>
+    </div>
+    <div class="container_3">
+      <input type="button" id="optionA" class="button" value="<input type = 'check'>" />
+      <input type="button" id="optionB" class="button" value="<input type = 'checkbox'>"/>
+      <input type="button" id="optionC" class="button" value="<checkbox>" />
+      <input type="button" id="optionD" class="button" value="<input type = 'button'>" />
+    </div>
+    <div class="container">
+     <a href="/results.html"><button id="nextButton">Next</button></a> 
+    </div>
+    <div class="container_4">
+      <footer>QUESTION 1 <span>/ 10</span></footer>
+    </div>
+    <script src="./questions.js"></script>
+      
+  </body>
+</html>

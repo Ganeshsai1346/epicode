@@ -1,0 +1,65 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="welcomepage.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="bg-image">
+        <img src="/epicode_logo.png" width="200" height="50" />
+      </div>
+      <div id="heading">Welcome to<br /><b>your exam</b></div>
+      <div>
+        <h3>Instructions</h3>
+      </div>
+      <div id="paragraph">
+        <p>
+          We don't expect most engineers to know the answers to all of these
+          <br />
+          questions, so dont worry if you're unsure of a few of them.
+        </p>
+      </div>
+      <div id="ul">
+        <ul>
+          <li>
+            Each question is <span class="bold">timed</span> and can only be
+            <span class="bold">answered once</span>.
+          </li>
+          <li>
+            Changing browser tab or opening other windows will
+            <span class="bold">invalidate the question</span>.
+          </li>
+          <li>
+            This exam will take approx. <span class="bold">0-5 minutes</span>.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <input type="checkbox" id="checkBox" onclick="enable()" />
+        <label> I promise to answer myself without help from anyone</label>
+        <a href="/questions.html"
+          ><button disabled="true" type="button" id="btn">PROCEED</button></a
+        >
+      </div>
+    </div>
+  </body>
+  <script src="./welcomepage.js"></script>
+</html>

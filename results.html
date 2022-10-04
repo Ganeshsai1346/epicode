@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reults</title>
+
+    <link rel="stylesheet" href="results.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+
+  <body>
+    <img class="logo" src="./logo.png" />
+
+    <div class="container">
+      <div class="header">
+        <h1 id="results">Results</h1>
+        <p>The Summary of your answers:</p>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Correct</h2>
+          <h3>66.7%</h3>
+          <h4>4/6 questions</h4>
+        </div>
+        <div class="chart-container" style="height: 100%; max-width: 1000px">
+          <canvas style="height: 450px" id="myChart"></canvas>
+
+          <div class="inner-chart">
+            <p style="font-size: 1.5rem">Congratulations!</p>
+            <p style="color: #00ffff; font-size: 1.5rem">
+              You passed the exam.
+            </p>
+            <div id="break"></div>
+            <p style="font-size: 0.9rem">
+              We'll send you the certificate in few minutes.
+            </p>
+            <p style="font-size: 0.9rem">in few minutes.</p>
+            <p style="font-size: 0.9rem">check your email (including</p>
+            <p style="font-size: 0.9rem">promotions / spam folder)</p>
+          </div>
+        </div>
+        <div>
+          <h2>Wrong</h2>
+          <h3>33.3%</h3>
+          <h4>2/6 questions</h4>
+        </div>
+      </div>
+      <div class="footer">
+        <button id="rateUS" onclick="location.href='feedbackpage.html'">
+          RATE US
+        </button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="results.js"></script>
+  </body>
+</html>
